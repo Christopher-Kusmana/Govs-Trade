@@ -1,5 +1,5 @@
 body{
-  margin: 0.2em;
+  margin-left: 0em;
   background-color: white;
   color: black;
 }
@@ -7,6 +7,35 @@ body{
 h1{
   font-size: 2em;
   color: black;
-  font-weight: bold;
-  font-family: garamond, serif;
+  font-family: "Book Antiqua",Palatino, serif;
+  text-align: center;
+}
+
+a{
+  margin:3.5%;
+}
+
+.gridContainer{
+  display: grid;
+  grid-template-rows: 20% 80%;
+}
+
+#links{
+  padding-top: 1em;
+  padding-bottom: 1em;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-family: "Book Antiqua",Palatino, serif;
+  border-top: 0.2em black solid;
+  border-bottom: 0.2em black solid;
+  background-color: rgb(204, 204, 204);
+  position: fixed;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#content{
+  margin-top: 1em;
+  grid-row-start:2;
 }
