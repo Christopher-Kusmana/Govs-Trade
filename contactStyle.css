@@ -1,6 +1,6 @@
 body{
   margin-left: 0em;
-  background-color: white;
+  background-color: #d1d1e0;
   color: black;
 }
 
@@ -14,6 +14,11 @@ h1{
 a{
   margin:3.5%;
 }
+
+textarea{
+  width: 50%;
+}
+
 
 .gridContainer{
   display: grid;
@@ -39,4 +44,12 @@ a{
 #content{
   margin-top: 1em;
   grid-row-start:2;
+}
+
+#formAndHeader{
+  background-color: #b3b3cc;
+}
+
+#devInfo{
+  background-color: #b3b3cc;
 }
