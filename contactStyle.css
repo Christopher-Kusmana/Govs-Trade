@@ -1,14 +1,14 @@
-body{
-  margin-left: 0em;
-  background-color: #d1d1e0;
-  color: black;
-}
 
 h1{
   font-size: 2em;
-  color: black;
+  color: #800000;
   font-family: "Book Antiqua",Palatino, serif;
   text-align: center;
+  border-bottom: 3px #800000 solid;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 a{
@@ -16,13 +16,48 @@ a{
 }
 
 textarea{
-  width: 50%;
+  width: 49%;
+  height: 3em;
+  resize: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px 10px;
+  text-align: center;
+  background-color: hsla(0,100%,25%,90%);
+  border:2px #800000 solid;
+  color: white;
+  outline:none;
+}
+
+body{
+  background-color: #800000;
+}
+
+input[type=text],input[type=email]{
+	margin: 10px 10px;
+    text-align:center;
+    border:2px #800000 solid;
+    border-radius:20px;
+    padding:10px;
+    background-color: hsla(0,100%,25%,90%);
+	width: 50%;
+    color: white;
+    outline:none;
+}
+
+
+input[type=submit]{
+	outline:none;
+    color: white;
+    background-color: hsla(0,100%,25%,90%);
+    border-radius:20px;
+    padding: 3% 10%;
 }
 
 
 .gridContainer{
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 10% 20% 70%;
 }
 
 #links{
@@ -43,13 +78,15 @@ textarea{
 
 #content{
   margin-top: 1em;
-  grid-row-start:2;
-}
-
-#formAndHeader{
-  background-color: #b3b3cc;
-}
-
-#devInfo{
-  background-color: #b3b3cc;
+  grid-row-start:3;
+  border-radius: 1.5em;
+  border: .2em black solid;
+  background-color: white;
+  width:60%;
+  float:center;
+  padding-bottom:10%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  height:100%;
 }
