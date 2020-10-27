@@ -17,7 +17,7 @@ a{
 
 .gridContainer{
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 10% 90%;
 }
 
 #links{
@@ -25,6 +25,7 @@ a{
   padding-bottom: 1em;
   top: 0;
   width: 100%;
+  font-size: 80%;
   text-align: center;
   font-family: "Book Antiqua",Palatino, serif;
   border-top: 0.2em black solid;
