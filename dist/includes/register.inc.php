@@ -3,7 +3,6 @@
 if(isset($_POST['signup-submit'])){
     require "dbh.inc.php";
     $username = $_POST['username'];
-    $email = $_POST['email'];
     $password = $_POST['password']; 
     $passwordRepeat = $_POST['confirmPassword'];
     if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
@@ -27,4 +26,6 @@ if(isset($_POST['signup-submit'])){
         #direct to login screen with success 
         #Future implementation: Email verification (vkey, etc), captcha, terms and condition
     }
+} else{
+    header("Location: ../register.php?error=invalidaccess");
 }
